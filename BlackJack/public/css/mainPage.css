@@ -1,0 +1,36 @@
+body{
+	padding: 0;
+	background: url(../images/startPage.jpg) no-repeat center center fixed;
+	-moz-background-size: 100% 100%; 
+    -webkit-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    background-size: 100% 100%;
+}
+
+.btn{
+	border: 2px solid #fff;
+	background-color: #052011;
+	font-size: 1.5em;
+	font-weight: 600;
+	width: 300px;
+	margin: 15px;
+	margin-top: 100px;
+}
+
+@media(min-width: 1200px){
+	.col-lg-1, .col-lg-10, 
+	.col-lg-11, .col-lg-12, 
+	.col-lg-2, .col-lg-3, 
+	.col-lg-4, .col-lg-5, 
+	.col-lg-6, .col-lg-7, 
+	.col-lg-8, .col-lg-9{
+		float: none;
+	}
+}
+
+@media(max-width: 665px){
+	.btn{
+		margin-top: 15px;
+	}
+}
+

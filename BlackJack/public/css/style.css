@@ -1,0 +1,355 @@
+body{
+	padding: 0;
+	background: url(../images/table.png) repeat center center fixed;
+	-moz-background-size: 100% 100%; 
+    -webkit-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    background-size: 100% 100%;
+}
+
+.money{
+	position: absolute;
+	background-color: #E9C85F;
+	padding: 5px;
+	width: 230px;
+	height: 150px;
+	border-radius: 5px;
+	top: 70px;
+	font-size: 1.35em;
+	font-weight: 700;
+	color: black;
+	margin-left: 5px;
+}
+
+.bet{
+	width: 100%;
+	margin: 10px 0;
+}
+.bet>label{
+	float: left;
+}
+.bet>p{
+	background-color: black;
+	color: white;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	float: right;
+	width: 70%;
+	height: 25px;
+}
+
+.cash{
+	width: 100%;
+	margin: 45px 0 0 0;
+}
+.cash>label{
+	margin-top: 5px;
+	float: left;
+}
+.cash>p{
+	background-color: black;
+	color: white;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	float: right;
+	width: 70%;
+	height: 25px;
+	margin-top: 5px;
+}
+
+.fishka ul{
+	position: absolute;	
+	list-style-type: none;
+	padding: 5px;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.fishka ul li{
+	display: inline;
+	float: left;
+	margin-right: 5px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;	
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+}
+.red{
+	background: url(../images/fishka1.png) no-repeat center;
+}
+.blue{
+	background: url(../images/fishkablue.png) no-repeat center;
+}
+.yellow{
+	background: url(../images/fishkayellow.png) no-repeat center;
+}
+.play{
+	position: absolute;
+	bottom: 0;
+	padding: 10px 0;
+	
+
+}
+.play button{
+	font-size: 1.25em;
+	background-color: #E9C85F;
+	border: none;
+	color: #000; 
+}
+	.play button:hover{
+		background-color: #000;
+		color: #fff;
+		border: none; 
+	}
+
+/*//////// BET fishk /////*/
+.blue1{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;	
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+	left: 46%; 
+  	bottom: 58%;
+	background: url(../images/fishkablue.png) no-repeat center;
+	z-index: 4;
+	animation: fishk_1 0.5s linear;
+}
+	@keyframes fishk_1{
+	  0%  { left: 5%; 
+	  		bottom: 5%;
+	  	}
+	  100% { left: 46%; 
+	  		bottom: 58%;
+	  	}
+	}
+.blue5{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;	
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+	left: 47%; 
+  	bottom: 58%;
+	background: url(../images/fishkablue.png) no-repeat center;
+	z-index: 5;
+	animation: fishk_5 0.5s linear;
+}
+@keyframes fishk_5{
+	  0%  { left: 5%; 
+	  		bottom: 5%;
+	  	}
+	  100% { left: 47%; 
+	  		bottom: 58%;
+	  	}
+	}
+
+.yellow25{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;	
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+	left: 48%; 
+  	bottom: 58.5%;
+	background: url(../images/fishkayellow.png) no-repeat center;
+	z-index: 6;
+	animation: fishk_25 0.5s linear;
+}
+@keyframes fishk_25{
+	  0%  { left: 12%; 
+	  		bottom: 5%;
+	  	}
+	  100% { left: 48%; 
+	  		bottom: 58.5%;
+	  	}
+	}
+
+.yellow50{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;	
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+	left: 49%; 
+  	bottom: 59%;
+	background: url(../images/fishkayellow.png) no-repeat center;
+	z-index: 7;
+	animation: fishk_50 0.5s linear;
+}
+@keyframes fishk_50{
+	  0%  { left: 12%; 
+	  		bottom: 5%;
+	  	}
+	  100% { left: 49%; 
+	  		bottom: 59%;
+	  	}
+	}
+.red100{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;	
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+	left: 50%; 
+  	bottom: 58.5%;
+	background: url(../images/fishka1.png) no-repeat center;
+	z-index: 8;
+	animation: fishk_100 0.5s linear;
+}
+@keyframes fishk_100{
+	  0%  { left: 18%; 
+	  		bottom: 5%;
+	  	}
+	  100% { left: 50%; 
+	  		bottom: 58.5%;
+	  	}
+	}
+
+.red200{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;	
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	color: black;
+	left: 51%; 
+  	bottom: 58%;
+	background: url(../images/fishka1.png) no-repeat center;
+	z-index: 9;
+	animation: fishk_200 0.5s linear;
+}
+@keyframes fishk_200{
+	  0%  { left: 18%; 
+	  		bottom: 5%;
+	  	}
+	  100% { left: 51%; 
+	  		bottom: 58%;
+	  	}
+	}
+
+
+/*//////END FISHK////////////*/
+
+/*/////////////CARDS/////////////*/
+
+.handD{
+	position: absolute;
+	top: 60px;
+	height: 150px;
+	padding: 0;
+
+}
+
+.handD > p{
+	float: left;
+	width: 23px;
+	height: 20px;
+	margin-right: 3px;
+	color: #000;
+	background-color: #fff;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+.handD > img{
+	float: left;
+	width: 100px;
+	height: 150px;
+	font-size: 1.1em;
+	font-weight: 600;
+	left: 100%;
+	margin-right: 3px;
+}
+
+.handP{
+	position: absolute;
+	bottom: 200px;
+	height: 150px;
+	/*width: 220px;*/
+	/*background-color: #fff;*/
+	padding: 0;
+}
+
+.handP > p{
+	float: left;
+	width: 23px;
+	height: 20px;
+	margin-right: 3px;
+	color: #000;
+	background-color: #fff;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+.handP > img{
+	float: left;
+	width: 100px;
+	height: 150px;
+	font-size: 1.1em;
+	font-weight: 600;
+	left: 100%;
+	margin-right: 3px;
+}
+
+@media screen and (max-width: 991px) and (min-width: 681px){
+	.play{
+		text-align: center;
+		left: 380px;
+	}
+
+	.handD{
+		left: 300px;
+		top: 80px;
+	}
+	.handP{
+		left: 300px;
+	}
+
+}
+
+@media screen and (max-width: 680px){
+	.play{
+		text-align: center;
+		left: 350px;
+		margin-left: 20px;
+	}
+
+	.handD{
+		left: 300px;
+		top: 80px;
+	}
+	.handP{
+		left: 200px;
+	}
+}
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BlackJack</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      socket.on("bet",(serverData)=>{
+        console.log(serverData);
+      });
+    </script>
+  </head>
+  <body>    
+    <div class="container-fluid">
+      <div class="row money">
+        <p class="text-center">Place your bet, please <strong id="user"><%= user %></strong></p>
+        <div class="bet">
+          <label class="text-uppercase">Bet :</label>
+          <p class="text-center" id="bet"><%= bet %></p>
+        </div>
+        <div class="cash">
+          <label class="text-uppercase">Cash :</label>
+          <p class="text-center" id="cash">0</p>
+        </div>        
+      </div>
+      <div class="row col-md-8 col-md-offset-4 handD" id="dealHand">
+        <!-- <p id="countD" class="text-center"></p> -->
+      </div>
+      <div class="row col-md-8 col-md-offset-4 handP" id="playHand">
+        <!-- <p id="countP" class="text-center"></p> -->
+      </div>      
+      <div class="row fishka">
+         <ul class="text-center col-md-12">
+          <li class="blue" onclick="createFishka1()">1</li>
+          <li class="blue" onclick="createFishka5()">5</li>
+          <li class="yellow" onclick="createFishka25()">25</li>
+          <li class="yellow" onclick="createFishka50()">50</li>
+          <li class="red" onclick="createFishka100()">100</li>
+          <li class="red" onclick="createFishka200()">200</li>
+        </ul>
+      </div>
+      <div class="row play col-md-6 col-md-offset-5"> 
+          <button type="button" class="btn btn-success" id="game" onclick="play();">Play</button>
+          <button type="button" class="btn btn-success" onclick="enough()">Enough</button>
+          <button type="button" class="btn btn-success" onclick="more()">More</button>
+          <!-- <button type="button" class="btn btn-success">Double</button>
+          <button type="button" class="btn btn-success">Split</button> -->
+      </div>
+     
+      
+       
+    </div>    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <script src="/js/play.js"></script>
+    
+  </body>
+</html>
